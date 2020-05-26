@@ -5,6 +5,7 @@
 \usepackage{amssymb}
 \usepackage[T1]{fontenc}
 \usepackage{siunitx}
+\usepackage{graphicx}
 
 \usepackage{amsmath}
 
@@ -49,6 +50,31 @@
     s &= \frac{1}{2} \cdot v \cdot t \\
     s &= \frac{1}{2} \cdot a \cdot t^2 \\
     s = \frac{v_1 + v_2}{2} \cdot t &= v_1 \cdot t + \frac{1}{2} \cdot a \cdot t^2 = \frac{v_2{}^{2} - v_1{}^2}{2 \cdot a}
+  \end{align}
+
+  \section{Dynamik}
+  \begin{equation}
+    F = m \cdot a
+  \end{equation}
+
+  \subsection{Reibung}
+
+  \subsubsection{Schiefe Bahn}
+
+  \includegraphics[width=\textwidth]{images/dynamik_schiefe_bahn.png}
+  \begin{equation}
+    F_R = \mu \cdot F_N
+  \end{equation}
+  \begin{equation}
+    F_H = F_G \cdot \sin{\alpha}
+  \end{equation}
+  \begin{equation}
+    F_N = F_{GN} \cdot \cos{\alpha}
+  \end{equation}
+  Resultierende Kraft:
+  \begin{align}
+    F_a &= F_H - F_R \\
+    F_a &= F_G \cdot \sin{\alpha} - \mu \cdot F_G \cdot \cos{\alpha} \\
   \end{align}
 
   \section{Taschenrechner}
