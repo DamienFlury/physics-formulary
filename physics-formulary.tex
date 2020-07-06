@@ -10,7 +10,9 @@
 \usepackage{amsmath}
 
 \newcommand{\eqname}[1]{\tag*{#1}}% Tag equation with name
-
+\newenvironment{conditions}
+  {\par\vspace{\abovedisplayskip}\noindent\begin{tabular}{>{$}l<{$} @{${}={}$} l}}
+  {\end{tabular}\par\vspace{\belowdisplayskip}}
 
 \title{Formelsammlung Physik}
 \date{6. November 2019}
@@ -34,7 +36,7 @@
     \end{tabular}
   \subsection{Umrechnung}
   \begin{align}
-    1 \frac{m}{s} &= 3.6 \frac{km}{h}
+    1 \frac{m}{s} &= 3.6 \frac{km}{h} \\
   \end{align}
   \section{Kinematik}
   \subsection{Translation (geradlinige Bewegung)}
@@ -51,6 +53,14 @@
     s &= \frac{1}{2} \cdot a \cdot t^2 \\
     s = \frac{v_1 + v_2}{2} \cdot t &= v_1 \cdot t + \frac{1}{2} \cdot a \cdot t^2 = \frac{v_2{}^{2} - v_1{}^2}{2 \cdot a}
   \end{align}
+  \subsection{Kreisbewegung}
+  \begin{equation}
+    \tau = \frac{1}{n}
+  \end{equation}
+  \begin{conditions}
+    \tau & Periodendauer \\
+    n & Umlaufzeit
+  \end{conditions}
 
   \section{Dynamik}
   Grundgesetz der Dynamik:
