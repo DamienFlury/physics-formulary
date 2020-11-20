@@ -4,7 +4,7 @@
 \usepackage[utf8]{inputenc}
 \usepackage{amssymb}
 \usepackage[T1]{fontenc}
-\usepackage{siunitx}
+\usepackage[per-mode=fraction]{siunitx}
 \usepackage{graphicx}
 
 \usepackage{amsmath}
@@ -36,7 +36,8 @@
     \end{tabular}
   \subsection{Umrechnung}
   \begin{align}
-    1 \frac{m}{s} &= 3.6 \frac{km}{h} \\
+    1 \si{\metre\per\second} &= 3.6 \si{\kilo\metre\per\hour}\\
+    1 \si{\bar} &= 10^5 \si{\pascal} \\
   \end{align}
   \section{Kinematik}
   \subsection{Translation (geradlinige Bewegung)}
@@ -67,6 +68,9 @@
   \begin{equation}
     F = m \cdot a
   \end{equation}
+  \begin{equation}
+    [F] = \si{\newton} = \si{\kilo\gram} \cdot \si{\metre\per\second\squared}
+  \end{equation}
 
   \subsection{Reibung}
 
@@ -93,9 +97,7 @@
   \begin{equation}
     \mu = \tan{\alpha}
   \end{equation}
-  \begin{equation}
-    [F] = N = kg \cdot \frac{m}{s^2}
-  \end{equation}
+
 
   \subsubsection{Dichte}
   \begin{equation}
@@ -147,6 +149,7 @@
     P = v \cdot F
   \end{equation}
 
+  \section{Statik}
   \subsection{Drehmoment}
   \begin{equation}
     \vec{M} = \vec{r} \times \vec{F}
@@ -157,6 +160,30 @@
   \end{equation}
   \begin{equation}
     P = v \cdot \frac{M}{r}
+  \end{equation}
+
+  \section{Hydrostatik}
+  \subsection{Druck}
+  \begin{align}
+    p &= \frac{F}{A} \\
+    [p] &= Pa
+  \end{align}
+  \begin{equation}
+    p = \rho \cdot g \cdot h
+  \end{equation}
+  
+  \subsubsection{Kolben}
+  \begin{equation}
+    \frac{F_1}{F_2} = \frac{A_1}{A_2} = \frac{{d_1}^2}{{d_2}^2}    
+  \end{equation}
+  \begin{equation}
+    A_1 \cdot s_1 = A_2 \cdot s_2
+  \end{equation}
+  \begin{equation}
+    W_1 = W_2 \Rightarrow F_1 \cdot s_1 = F_2 \cdot s_2
+  \end{equation}
+  \begin{equation}
+    \frac{s_1}{s_2} = \frac{F_2}{F_1} = \frac{A_2}{A_1} 
   \end{equation}
 
   \section{Taschenrechner}
