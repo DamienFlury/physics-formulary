@@ -204,11 +204,90 @@
     V = V_0 \cdot (1 + 3 \cdot \alpha \cdot \Delta T)
   \end{equation}
 
+  \subsection{Spezifische Wärmekapazität c}
+  \begin{equation}
+    [c] = \si{\joule\per\kilogram\per\kelvin}
+  \end{equation}
   \subsection{Wärmeenergie}
   \begin{equation}
+    [Q] = \si{\joule}
+  \end{equation}
+  \begin{equation}
     \Delta Q = c \cdot m \cdot \Delta T
-  \end{equation}  
+  \end{equation}
+  \begin{equation}
+    Q = P \cdot t
+  \end{equation}
+  \subsection{Wärmekapazität C}
+  \begin{equation}
+    C = \frac{\Delta Q}{\Delta T}
+  \end{equation}
+  \begin{equation}
+    C = m \cdot c
+  \end{equation}
+  \subsection{Mischungsregel}
+  \begin{equation}
+    c_1 \cdot m_1 \cdot (T_1 - T_m) = c_2 \cdot m_2 \cdot (T_m - T_2)
+  \end{equation}
+  \begin{conditions}
+    T_m & Temperatur beider Körper nach Mischen
+  \end{conditions}
+  \begin{equation}
+    \implies T_m = \frac{c_1 \cdot m_1 \cdot T_1 + c_2 \cdot m_2 \cdot T_2 + \ldots}{c_1 \cdot m_1 + c_2 \cdot m_2 + \ldots}
+  \end{equation}
 
+  \subsection{Verbrennungsenergie}
+  \begin{equation}
+    H = \frac{Q}{m}
+  \end{equation}
+  \begin{conditions}
+    H & Spezifischer Heizwert eines Brennstoffes (s/f) \\
+    m & Masse des Stoffes, welcher vollständig verbrennt \\
+    Q & Frei gewordene Wärmeenergie
+  \end{conditions}
+
+  \subsubsection{Gasförmige Brennstoffe}
+  \begin{equation}
+    H' = \frac{Q}{V_n}
+  \end{equation}
+  \begin{conditions}
+    H' & Spezifischer Heizwert eines Brennstoffes (g) \\
+    V_n & Volumen des Gases, welches verbrennt \\
+    Q & Frei gewordene Wärmeenergie \\
+    P_n & 101.325 \si{\kilo\pascal} \\
+    T_n & 273.15 \si{\kelvin} (0 \si{\celsius})
+  \end{conditions}
+  \subsection{Boyle-Mariotte-Gesetz}
+  \begin{equation}
+    p_1 \cdot V_1 = p_2 \cdot V_2 \implies \frac{p_1}{p_2} = \frac{V_2}{V_1}
+  \end{equation}
+  \subsection{Gaszustandsgleichung}
+  \begin{equation}
+    \frac{p_1 \cdot V_1}{T_1} = \frac{p_2 \cdot V_2}{T_2} = konst.
+  \end{equation}
+  \begin{conditions}
+    T & konst.
+  \end{conditions}
+  \section{Elektrizität}
+  \subsection{Stromstärke}
+  \begin{equation}
+    I = \frac{Q}{t}
+  \end{equation}
+  \subsection{Ohm'sches Gesetz}
+  \begin{equation}
+    U = R \cdot I
+  \end{equation}
+  \subsection{Leistung}
+  \begin{equation}
+    P = U \cdot I
+  \end{equation}
+  \begin{equation}
+    P = R \cdot I^2
+  \end{equation}
+  \subsection{Widerstände}
+  \begin{equation}
+    R = \frac{1}{\frac{1}{R_1} + \frac{1}{R_2}}
+  \end{equation}
   \section{Taschenrechner}
   \subsection{Stunden zu Stunden, Minuten and Sekunden konvertieren}
   \begin{equation}
@@ -219,4 +298,9 @@
   \begin{equation}
     g = 9.81 \si{\metre\per\square\second}
   \end{equation}
+  \subsection{Atmosphärendruck}
+  \begin{equation}
+    1 atm = 101.325 \si{\kilo\pascal}
+  \end{equation}
+
 \end{document}
